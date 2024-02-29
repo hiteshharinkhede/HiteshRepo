@@ -22,11 +22,11 @@ Background:
 
 
 
-Scenario: 
-Given url "https://restful-booker.herokuapp.com/booking/1"
+Scenario: to update complete recource on to database
+Given url 'https://restful-booker.herokuapp.com/booking/1'
 And request requestBody
-When put
-Then staus 200
+When method put
+Then status 200
 * def responseBody = response
 * print response
 

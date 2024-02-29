@@ -12,10 +12,10 @@ Background:
 
 """
 
-Scenario: 
-Given url "https://restful-booker.herokuapp.com/booking/1"
+Scenario: updates the partial recource on to the database
+Given url 'https://restful-booker.herokuapp.com/booking/1'
 And request requestBody
 When method put
-Then staus 200
+Then status 200
 * def  responseBody  = response
 * print responseBody 
