@@ -1,4 +1,4 @@
-Feature: To verify delet request
+Feature: To verify delete request
 
 Scenario: delete the recource from database
 Given url 'https://restful-booker.herokuapp.com/booking/1'
